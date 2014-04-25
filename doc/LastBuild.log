@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="D:\Projets\Navigateur\dev\IpmBrowser\src\IpmBrowser\IpmBrowser.shfbproj" started="25/04/2014 16:53:54">
+<buildStep step="Initializing">
+Finding tools...
+Found Sandcastle tools in &#39;C:\Program Files (x86)\Sandcastle\&#39;
+Searching for HTML Help 1 compiler...
+Found HTML Help 1 compiler in &#39;C:\Program Files (x86)\HTML Help Workshop\&#39;
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: D:\Projets\Navigateur\dev\IpmBrowser\bin\Doc\IpmBrowser\IPM-Navigateur.exe
+    Found assembly &#39;D:\Projets\Navigateur\dev\IpmBrowser\bin\Doc\IpmBrowser\IPM-Navigateur.exe&#39;
+Source: D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\IPM-Navigateur.xml
+
+Copying XML comments files
+    D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\IPM-Navigateur.xml -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\IPM-Navigateur.xml
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (fr-FR, Fran&#231;ais (France))...
+    Last step completed in 00:00:00.1020
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0220
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  MRefBuilder (v2.7.3.0)
+  Copyright &#184; 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Loaded 1 assemblies for reflection and 1 dependency assemblies.
+  Info: Wrote information on 1 namespaces, 32 types, and 232 members
+  XslTransform (v2.7.3.0)
+  Copyright &#184; 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\MergeDuplicates.xsl&#39;.
+    Last step completed in 00:00:01.4651
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.0090
+</buildStep>
+<buildStep step="ApplyVisibilityProperties">
+Applying visibility properties to reflection information file
+    0 explicit interface implementations removed
+    0 local and base class EII elements removed
+    192 inherited member elements removed
+    2 protected members noted for removal
+    0 protected inherited framework members noted for removal
+    Removing previously noted unwanted APIs and elements
+    Last step completed in 00:00:00.0470
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.7.3.0)
+  Copyright &#184; 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\AddGuidFilenames.xsl&#39;.
+  XslTransform (v2.7.3.0)
+  Copyright &#184; 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+    Last step completed in 00:00:01.1561
+</buildStep>
+<buildStep step="ModifyHelpTopicFilenames">
+Modifying help topic filenames in reflection information file
+    No changes required
+    Last step completed in 00:00:00.0110
+</buildStep>
+<buildStep step="CopyStandardContent">
+Copying standard help content...
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_caution.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\alert_caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_note.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\alert_note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_security.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\alert_security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_adm.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\big_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\big_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\big_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_kw.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\big_kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\box.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\box.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\Caution.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\Caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\CFW.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\CFW.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collall.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\collall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\collapse.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse_all.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\collapse_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycode.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\copycode.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycodeHighlight.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\copycodeHighlight.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdown.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\dropdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdownHover.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\dropdownHover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\drpdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\drpdown_orange.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange_up.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\drpdown_orange_up.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpup.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\drpup.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\exp.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\exp.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expall.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\expall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expand_all.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\expand_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1a.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\filter1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1c.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\filter1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\footer.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\footer.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\gradient.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\gradient.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greencheck.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\greencheck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greychck.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\greychck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_prev_next.jpg -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\header_prev_next.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_blank.jpg -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\header_sql_tutorial_blank.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_logo.GIF -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\header_sql_tutorial_logo.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\kw_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\LastChild.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\LastChild.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\load.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load_hover.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\load_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\note.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pencil.GIF -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pencil.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privclass.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privdelegate.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenum.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenumeration.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privevent.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privextension.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privfield.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privinterface.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privmethod.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privproperty.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privstructure.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\privstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protclass.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protdelegate.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenum.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenumeration.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protevent.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protextension.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protfield.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protinterface.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protmethod.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protoperator.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protoperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protproperty.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protstructure.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\protstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubclass.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubdelegate.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenum.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenumeration.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubevent.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubextension.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubfield.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubinterface.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubmethod.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\puboperator.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\puboperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubproperty.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubstructure.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\pubstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1a.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\requirements1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1c.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\requirements1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\save.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save_hover.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\save_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\security.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1a.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\seealso1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1c.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\seealso1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\slMobile.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\slMobile.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\static.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\static.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\xna.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\icons\xna.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CheckboxMenu.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\CheckboxMenu.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CommonUtilities.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\CommonUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\Dropdown.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\Dropdown.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\EventUtilities.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\EventUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_feedBack.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\script_feedBack.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_manifold.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\script_manifold.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\SplitScreen.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\scripts\SplitScreen.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Presentation.css -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\styles\Presentation.css
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Whidbey\Presentation.css -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\styles\Whidbey\Presentation.css
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\adm_dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_caution.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\alert_caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_note.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\alert_note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\alert_security.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\alert_security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_adm.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\big_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\big_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\big_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\big_kw.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\big_kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\box.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\box.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\Caution.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\Caution.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\CFW.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collall.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\collall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\collapse.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\collapse_all.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\collapse_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycode.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\copycode.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\copycodeHighlight.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\copycodeHighlight.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdown.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\dropdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\dropdownHover.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\dropdownHover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\drpdown.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\drpdown_orange.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpdown_orange_up.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\drpdown_orange_up.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\drpup.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\drpup.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\exp.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\exp.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expall.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\expall.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\expand_all.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\expand_all.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1a.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\filter1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\filter1c.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\filter1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\footer.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\footer.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\gradient.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\gradient.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greencheck.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\greencheck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\greychck.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\greychck.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_prev_next.jpg -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\header_prev_next.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_blank.jpg -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\header_sql_tutorial_blank.jpg
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\header_sql_tutorial_logo.GIF -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\header_sql_tutorial_logo.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_adm.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_adm_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_adm_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_adm_dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_adm_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_dev.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\kw_dev_arch.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\kw_dev_arch.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\LastChild.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\LastChild.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\load.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\load_hover.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\load_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\note.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\note.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pencil.GIF -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pencil.GIF
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privclass.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privdelegate.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenum.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privenumeration.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privevent.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privextension.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privfield.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privinterface.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privmethod.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privproperty.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\privstructure.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protclass.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protdelegate.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenum.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protenumeration.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protevent.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protextension.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protfield.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protinterface.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protmethod.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protoperator.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protproperty.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\protstructure.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubclass.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubdelegate.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenum.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubenum.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubenumeration.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubevent.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubextension.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubfield.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubinterface.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubmethod.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\puboperator.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubproperty.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\pubstructure.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1a.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\requirements1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\requirements1c.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\requirements1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\save.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\save_hover.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\save_hover.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\security.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\security.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1a.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\seealso1a.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\seealso1c.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\seealso1c.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\slMobile.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\static.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\icons\xna.gif -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CheckboxMenu.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\CheckboxMenu.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\CommonUtilities.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\CommonUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\Dropdown.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\Dropdown.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\EventUtilities.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\EventUtilities.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_feedBack.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\script_feedBack.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\script_manifold.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\script_manifold.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\scripts\SplitScreen.js -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\scripts\SplitScreen.js
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Presentation.css -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\styles\Presentation.css
+C:\Program Files (x86)\Sandcastle\\Presentation\VS2005\styles\Whidbey\Presentation.css -&gt; D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website\styles\Whidbey\Presentation.css
+    Last step completed in 00:00:00.5710
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0070
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  XslTransform (v2.7.3.0)
+  Copyright &#184; 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Applying XSL transformation &#39;C:\Program Files (x86)\Sandcastle\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:00.2350
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.2160
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\sandcastle.config
+    Last step completed in 00:00:00.0230
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  BuildAssembler (v2.7.3.0)
+  Copyright &#184; 2006-2013, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved.
+  Info: Loading configuration...
+  Info: Processing topics...
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnClosing] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnClosing] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnMaintenance] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnMaintenance] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnStarting] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.ipmOnStarting] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.battery.ipmOnBatteryChargeRemainingChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.battery.ipmOnBatteryChargeRemainingChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.battery.ipmOnBatteryStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.battery.ipmOnBatteryStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserAppInitialized] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserAppInitialized] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserAppStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserAppStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserDocumentCompleted] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserDocumentCompleted] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserInputClick] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserInputClick] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserNavigateError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserNavigateError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserStartpageCompleted] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserStartpageCompleted] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserStartpageError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserStartpageError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserStatusTextChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.browser.ipmOnBrowserStatusTextChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.console.log(System.String)] Missing &lt;param name=&quot;str&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.keyboard.ipmOnKeyboardErrorChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.keyboard.ipmOnKeyboardErrorChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.keypad.addCode(System.String,System.String)] Missing &lt;param name=&quot;code&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.keypad.addCode(System.String,System.String)] Missing &lt;param name=&quot;access&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.keypad.ipmOnKeypadAccessAllowed] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.keypad.ipmOnKeypadAccessAllowed] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:IpmBrowser.Javascript.ipm.kiosk.errors] Unknown reference link target &#39;!:ipmKioskEvent.ipmOnKioskErrorsChanged&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:IpmBrowser.Javascript.ipm.kiosk.errors] Invalid reference link target &#39;!:ipmKioskEvent.ipmOnKioskErrorsChanged&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:IpmBrowser.Javascript.ipm.kiosk.errors] Unknown reference link target &#39;!:ipmKioskEvent.ipmOnKioskErrorsChanged&#39;.
+  Warn: ResolveReferenceLinksComponent2: [P:IpmBrowser.Javascript.ipm.kiosk.errors] Invalid reference link target &#39;!:ipmKioskEvent.ipmOnKioskErrorsChanged&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.kiosk.ipmOnKioskAskForHelp] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.kiosk.ipmOnKioskAskForHelp] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.kiosk.ipmOnKioskErrorsChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.kiosk.ipmOnKioskErrorsChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.kiosk.ipmOnKioskInactivity] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.kiosk.ipmOnKioskInactivity] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.kiosk.setDisplayResolution(System.Int32,System.Int32,System.Int32)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.kiosk.setDisplayResolution(System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;width&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.kiosk.setDisplayResolution(System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;height&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.kiosk.setDisplayResolution(System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;freq&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.debug(System.String,System.Object[])] Missing &lt;param name=&quot;fmt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.debug(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.error(System.String,System.Object[])] Missing &lt;param name=&quot;fmt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.error(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.fatal(System.String,System.Object[])] Missing &lt;param name=&quot;fmt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.fatal(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.info(System.String,System.Object[])] Missing &lt;param name=&quot;fmt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.info(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.warn(System.String,System.Object[])] Missing &lt;param name=&quot;fmt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.warn(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.warning(System.String,System.Object[])] Missing &lt;param name=&quot;fmt&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.log.warning(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.monitoring.sendNsca(System.String,System.Int32,System.String,System.String)] Missing &lt;param name=&quot;service&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.monitoring.sendNsca(System.String,System.Int32,System.String,System.String)] Missing &lt;param name=&quot;result&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.monitoring.sendNsca(System.String,System.Int32,System.String,System.String)] Missing &lt;param name=&quot;output&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.monitoring.sendNsca(System.String,System.Int32,System.String,System.String)] Missing &lt;param name=&quot;perfData&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.payment.debit(System.Int32)] Unknown reference link target &#39;!:IpmDev.PrintCCPaymentReceipt&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.payment.debit(System.Int32)] Invalid reference link target &#39;!:IpmDev.PrintCCPaymentReceipt&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.payment.debit(System.Int32)] Unknown reference link target &#39;!:IpmDev.PrintCCPaymentReceipt&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.payment.debit(System.Int32)] Invalid reference link target &#39;!:IpmDev.PrintCCPaymentReceipt&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.payment.printReceipt(System.String,System.Boolean)] Missing &lt;param name=&quot;printerName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.payment.printReceipt(System.String,System.Boolean)] Missing &lt;param name=&quot;preview&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:IpmBrowser.Javascript.ipm.pcscReaders] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:IpmBrowser.Javascript.ipm.pcscReaders] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:IpmBrowser.Javascript.ipm.pcscReaders] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [AllMembers.T:IpmBrowser.Javascript.ipm.pcscReaders] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:IpmBrowser.Javascript.ipm.pcscReaders] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:IpmBrowser.Javascript.ipm.pcscReaders] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:IpmBrowser.Javascript.ipm.pcscReaders] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [Methods.T:IpmBrowser.Javascript.ipm.pcscReaders] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReader(System.String)] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReaderByIndex(System.Int32)] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReaderByIndex(System.Int32)] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReaderByIndex(System.Int32)] Unknown reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.ipm.pcscReaders.getReaderByIndex(System.Int32)] Invalid reference link target &#39;!:PcscReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.pcscReaders.ipmOnPcscReadersChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.pcscReaders.ipmOnPcscReadersChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.printers.getPrinter(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.printers.getPrinter(System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.session.ipmOnSessionChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.session.ipmOnSessionChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.formatString(System.String,System.Object[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.formatString(System.String,System.Object[])] Missing &lt;param name=&quot;format&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.formatString(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.inifileGet(System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.inifileGet(System.String,System.String)] Missing &lt;param name=&quot;filepath&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.inifileGet(System.String,System.String)] Missing &lt;param name=&quot;regex&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.killProcess(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.killProcess(System.String)] Missing &lt;param name=&quot;processName&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.rdcLastAccess] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.restart(System.Boolean)] Missing &lt;param name=&quot;ups&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.run(System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.run(System.String,System.String)] Missing &lt;param name=&quot;exepath&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.run(System.String,System.String)] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.runAsync(System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.runAsync(System.String,System.String)] Missing &lt;param name=&quot;exepath&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.runAsync(System.String,System.String)] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.registry.getValue(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.registry.getValue(System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.registry.setValue(System.String,System.Object)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.registry.setValue(System.String,System.Object)] Missing &lt;param name=&quot;value&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.wmi.get(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.system.wmi.get(System.String)] Missing &lt;param name=&quot;query&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.create(System.String,System.String,System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.create(System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;tabname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.create(System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;winname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.create(System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;startpage&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.create(System.String,System.String,System.String,System.String)] Missing &lt;param name=&quot;type&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.tabs.ipmOnOskbdVisibleChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.ipm.tabs.ipmOnOskbdVisibleChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.load(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.load(System.String,System.String,System.String)] Missing &lt;param name=&quot;tabname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.load(System.String,System.String,System.String)] Missing &lt;param name=&quot;winname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.load(System.String,System.String,System.String)] Missing &lt;param name=&quot;startpage&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.show(System.String,System.Boolean,System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.show(System.String,System.Boolean,System.String,System.String)] Missing &lt;param name=&quot;tabname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.show(System.String,System.Boolean,System.String,System.String)] Missing &lt;param name=&quot;visible&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.show(System.String,System.Boolean,System.String,System.String)] Missing &lt;param name=&quot;winname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.ipm.tabs.show(System.String,System.Boolean,System.String,System.String)] Missing &lt;param name=&quot;startpage&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.oskbd.ipmOnOskbdVisibleChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.oskbd.ipmOnOskbdVisibleChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.oskbd.sendKey(System.String)] Missing &lt;param name=&quot;keys&quot;/&gt; documentation
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Unknown reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Invalid reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Unknown reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Invalid reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Unknown reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Invalid reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Unknown reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [T:IpmBrowser.Javascript.pcscReader] Invalid reference link target &#39;!:ipmPcscReaders.getReader&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.pcscReader.ipmOnPcscReaderCardStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.pcscReader.ipmOnPcscReaderCardStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.pcscReader.ipmOnPcscReaderStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.pcscReader.ipmOnPcscReaderStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterErrorChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterErrorChanged] Unknown reference link target &#39;!:Printer.error&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterErrorChanged] Invalid reference link target &#39;!:Printer.error&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterErrorChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterErrorChanged] Unknown reference link target &#39;!:Printer.error&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterErrorChanged] Invalid reference link target &#39;!:Printer.error&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Unknown reference link target &#39;!:Printer.jobPagesPrinted&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Invalid reference link target &#39;!:Printer.jobPagesPrinted&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Unknown reference link target &#39;!:Printer.jobTotalPages&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Invalid reference link target &#39;!:Printer.jobTotalPages&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Unknown reference link target &#39;!:Printer.jobPagesPrinted&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Invalid reference link target &#39;!:Printer.jobPagesPrinted&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Unknown reference link target &#39;!:Printer.jobTotalPages&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobPagesChanged] Invalid reference link target &#39;!:Printer.jobTotalPages&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Unknown reference link target &#39;!:Printer.jobs&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Invalid reference link target &#39;!:Printer.jobs&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Unknown reference link target &#39;!:Printer.jobId&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Invalid reference link target &#39;!:Printer.jobId&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Unknown reference link target &#39;!:Printer.jobs&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Invalid reference link target &#39;!:Printer.jobs&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Unknown reference link target &#39;!:Printer.jobId&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterJobsChanged] Invalid reference link target &#39;!:Printer.jobId&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterPrintingError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterPrintingError] Unknown reference link target &#39;!:Printer.printingError&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterPrintingError] Invalid reference link target &#39;!:Printer.printingError&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterPrintingError] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterPrintingError] Unknown reference link target &#39;!:Printer.printingError&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterPrintingError] Invalid reference link target &#39;!:Printer.printingError&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterStatusChanged] Unknown reference link target &#39;!:Printer.status&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterStatusChanged] Invalid reference link target &#39;!:Printer.status&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterStatusChanged] Unknown reference link target &#39;T:IpmBrowser.Javascript.CallbackEventHandler&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterStatusChanged] Unknown reference link target &#39;!:Printer.status&#39;.
+  Warn: ResolveReferenceLinksComponent2: [E:IpmBrowser.Javascript.printer.ipmOnPrinterStatusChanged] Invalid reference link target &#39;!:Printer.status&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.printer.printFromCacheLastDocument(System.String)] Unknown reference link target &#39;M:IpmBrowser.Javascript.printer.printDocument(System.String)&#39;.
+  Warn: ResolveReferenceLinksComponent2: [M:IpmBrowser.Javascript.printer.printFromCacheLastDocument(System.String)] Unknown reference link target &#39;M:IpmBrowser.Javascript.printer.printDocument(System.String)&#39;.
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.printer.printPage(System.String,System.Boolean)] Missing &lt;param name=&quot;preview&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.printer.printPdfInFrame(System.String,System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.printer.printPdfInFrame(System.String,System.String)] Missing &lt;param name=&quot;id&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.printer.printPdfInFrame(System.String,System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.printer.printTab(System.String)] Missing &lt;param name=&quot;tabname&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.tab.call(System.String,System.Object[])] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.tab.call(System.String,System.Object[])] Missing &lt;param name=&quot;method&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.tab.call(System.String,System.Object[])] Missing &lt;param name=&quot;args&quot;/&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.tab.fmtFullPath(System.String)] Missing &lt;returns&gt; documentation
+  Warn: ShowMissingComponent: [M:IpmBrowser.Javascript.tab.fmtFullPath(System.String)] Missing &lt;param name=&quot;localPath&quot;/&gt; documentation
+  Info: Processed 356 topic(s)
+  Info: 200 warning(s)
+  Diagnostic: CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 2 of 15.
+  Diagnostic: CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 1 of 30.
+    Last step completed in 00:00:21.0622
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+
+Clearing any prior web output
+    Last step completed in 00:00:00.0040
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+Sandcastle Help File Builder, version 1.9.7.0
+Copyright &#184; 2006-2013, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1036&#39;, code page &#39;1252&#39;, encoding charset &#39;Windows-1252&#39;.
+
+Processing Help 1 files in D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1
+Processed 356 HTML files
+Sorting keywords and generating See Also indices
+Saving HTML Help 1 keyword index to D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Ipm-Navigateur_2.1.0.hhk
+Saving HTML Help 1 table of contents to D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Ipm-Navigateur_2.1.0.hhc
+
+Processing website files in D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\Website
+Processed 356 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\WebKI.xml
+Saving website table of contents to D:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\WebTOC.xml
+    Last step completed in 00:00:00.3200
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating HTML Help 1 table of contents file...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateHelpFileIndex">
+Generating HTML Help 1 index file...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateHelpProject">
+Generating HTML Help 1 project file...
+    Last step completed in 00:00:00.0080
+</buildStep>
+<buildStep step="CompilingHelpFile">
+Compiling HTML Help 1 file...
+[C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
+  Microsoft HTML Help Compiler 4.74.8702
+  
+  
+  
+  Compiling d:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\Ipm-Navigateur_2.1.0.chm
+  
+  
+  
+  
+  
+  Compile time: 0 minutes, 2 seconds
+  
+  358	Topics
+  
+  3,801	Local links
+  
+  5	Internet links
+  
+  0	Graphics
+  
+  
+  
+  
+  
+  Created d:\Projets\Navigateur\dev\IpmBrowser\doc\IpmBrowser\Working\Output\HtmlHelp1\Ipm-Navigateur_2.1.0.chm, 471,185 bytes
+  
+  Compression decreased file by 3,267,627 bytes.
+  
+    Last step completed in 00:00:02.8282
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0040
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+    Last step completed in 00:00:00.8070
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 100 files
+Copied 200 files
+Copied 300 files
+Copied 400 files
+Copied 491 files for the website content
+    Last step completed in 00:00:00.5640
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.1190
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 04/25/2014 04:54 .  Total time: 00:00:29,8157
+
+</buildStep>
+</shfbBuild>
