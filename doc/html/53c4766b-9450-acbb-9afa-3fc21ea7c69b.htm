@@ -1,0 +1,113 @@
+﻿<html xmlns:MSHelp="http://msdn.microsoft.com/mshelp" xmlns:mshelp="http://msdn.microsoft.com/mshelp" xmlns:ddue="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8" />
+    <META NAME="save" CONTENT="history" />
+    <title>ipm.registerCallback Method </title>
+    <meta name="Language" content="fr-fr" />
+    <meta name="System.Keywords" content="registerCallback method" />
+    <meta name="System.Keywords" content="ipm.registerCallback method" />
+    <meta name="Microsoft.Help.F1" content="IpmBrowser.Javascript.ipm.registerCallback" />
+    <meta name="Microsoft.Help.Id" content="M:IpmBrowser.Javascript.ipm.registerCallback(System.String)" />
+    <meta name="Description" content="Enregistre une callback javascript pour le tab courant." />
+    <meta name="Microsoft.Help.ContentType" content="Reference" />
+    <link rel="stylesheet" type="text/css" href="../styles/Presentation.css" />
+    
+    <script type="text/javascript" src="../scripts/EventUtilities.js"> </script>
+    <script type="text/javascript" src="../scripts/SplitScreen.js"> </script>
+    <script type="text/javascript" src="../scripts/Dropdown.js"> </script>
+    <script type="text/javascript" src="../scripts/script_manifold.js"> </script>
+    <script type="text/javascript" src="../scripts/script_feedBack.js"> </script>
+    <script type="text/javascript" src="../scripts/CheckboxMenu.js"> </script>
+    <script type="text/javascript" src="../scripts/CommonUtilities.js"> </script>
+    <meta name="container" content="IpmBrowser.Javascript" />
+    <meta name="file" content="53c4766b-9450-acbb-9afa-3fc21ea7c69b" />
+    <meta name="guid" content="53c4766b-9450-acbb-9afa-3fc21ea7c69b" />
+    
+    <link type="text/css" rel="stylesheet" href="../styles/highlight.css" />
+    <script type="text/javascript" src="../scripts/highlight.js"> </script>
+  </head>
+  <body>
+    <input type="hidden" id="userDataCache" class="userDataStyle" />
+    <input type="hidden" id="hiddenScrollOffset" />
+    <img id="collapseImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" alt="Collapse image" title="Collapse image" />
+    <img id="expandImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" alt="Expand Image" title="Expand Image" />
+    <img id="collapseAllImage" style="display:none; height:0; width:0;" src="../icons/collapse_all.gif" />
+    <img id="expandAllImage" style="display:none; height:0; width:0;" src="../icons/expand_all.gif" />
+    <img id="dropDownImage" style="display:none; height:0; width:0;" src="../icons/dropdown.gif" />
+    <img id="dropDownHoverImage" style="display:none; height:0; width:0;" src="../icons/dropdownHover.gif" />
+    <img id="copyImage" style="display:none; height:0; width:0;" src="../icons/copycode.gif" alt="Copy image" title="Copy image" />
+    <img id="copyHoverImage" style="display:none; height:0; width:0;" src="../icons/copycodeHighlight.gif" alt="CopyHover image" title="CopyHover image" />
+    <div id="header">
+      <table id="topTable" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <span onclick="ExpandCollapseAll(toggleAllImage)" style="cursor:default;" onkeypress="ExpandCollapseAll_CheckKey(toggleAllImage, event)" tabindex="0">
+              <img ID="toggleAllImage" class="toggleAll" src="../icons/collapse_all.gif" /> <label id="collapseAllLabel" for="toggleAllImage" style="display: none;">Collapse All</label><label id="expandAllLabel" for="toggleAllImage" style="display: none;">Expand All</label> </span>
+          </td>
+        </tr>
+      </table>
+      <div id="devlangsMenu">
+        <input id="CSharpCheckbox" type="checkbox" data="CSharp,cs,'persist'" value="on" onClick="SetLanguage(this)" />
+        <label class="checkboxLabel" for="CSharpCheckbox">C#</label>
+        <br />
+      </div>
+      <table id="bottomTable" cellpadding="0" cellspacing="0">
+        <tr id="headerTableRow1">
+          <td align="left">
+            <span id="runningHeaderText">Ipm-Navigateur v 2.1.0</span>
+          </td>
+        </tr>
+        <tr id="headerTableRow2">
+          <td align="left">
+            <span id="nsrTitle">ipm<span class="languageSpecificText"><span class="cs">.</span><span class="vb">.</span><span class="cpp">::</span><span class="nu">.</span><span class="fs">.</span></span>registerCallback Method </span>
+          </td>
+        </tr>
+        <tr id="headerTableRow3">
+          <td align="left">
+            <a href="645d24e8-cfee-be9d-4c3b-27e32f9a3a62.htm">ipm Class</a> <a href="#exampleToggle" onclick="OpenSection(exampleToggle)">Exemples</a> <a href="#seeAlsoToggle" onclick="OpenSection(seeAlsoToggle)">Voir aussi</a> </td>
+        </tr>
+      </table>
+      <table id="gradientTable">
+        <tr>
+          <td class="nsrBottom" id="headerBottom">
+            <img id="headerBottomImage" style="display: none;" src="../icons/gradient.gif" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="mainSection">
+      <div id="mainBody">
+        <div id="allHistory" class="saveHistory" onsave="saveAll()" onload="loadAll()" />
+        <span style="color: DarkGray"></span>
+        <div class="summary">
+            Enregistre une callback javascript pour le tab courant.
+            </div>
+        <p /> <br /><h1 class="heading"><span onclick="ExpandCollapse(syntaxToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(syntaxToggle, event)" tabindex="0"><img id="syntaxToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Syntaxe</span></h1><div id="syntaxSection" class="section" name="collapseableSection" style=""><div id="syntaxCodeBlocks" class="code"><span codeLanguage="CSharp"><table><tr><th>C#</th></tr><tr><td><pre xml:space="preserve"><span class="keyword">public</span> <span class="identifier">bool</span> <span class="identifier">registerCallback</span>(
+	<span class="identifier">string</span> <span class="parameter">callback</span>
+)</pre></td></tr></table></span></div><div id="parameters"><h4 class="subHeading">Paramètres</h4><dl paramName="callback"><dt><span class="parameter">callback</span></dt><dd>Nom de la callback (et donc de l'événement).</dd></dl></div><h4 class="subHeading">Valeur de retour</h4><b>true</b> si le nom de l'événement existe, <b>false</b> sinon.</div><h1 class="heading"><span onclick="ExpandCollapse(remarksToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(remarksToggle, event)" tabindex="0"><img id="remarksToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Remarques</span></h1><div id="remarksSection" class="section" name="collapseableSection" style="">
+            Cette méthode est utilisée pour tous les événements générés par le Navigateur.
+            <p>
+            Le mécanisme d'enregistrement des événements concerne le tab, et non la page html courante.
+            Il suffit de s'abonner une seule fois en début d'application et non à chaque navigation vers une page.
+            </p><p><div class="alert"><table><tr><th><img src="../icons/alert_note.gif" title="Note" /> <b>Note</b></th></tr><tr><td>
+            Pour un tab donné, le fait de s'abonner plusieurs fois au même événement est sans conséquence : l'événement ne sera généré qu'une seule fois.
+            </td></tr></table></div></p><p><div class="alert"><table><tr><th><img src="../icons/alert_caution.gif" title="Important note" /> <b>Important</b></th></tr><tr><td>
+            L'appel à la callback est un appel <b>synchrone</b> : il ne doit pas y avoir de traitement bloquant. Sinon, utiliser un timer dans la callback.
+            </td></tr></table></div></p></div><h1 class="heading"><span onclick="ExpandCollapse(exampleToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(exampleToggle, event)" tabindex="0"><img id="exampleToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Exemples</span></h1><div id="exampleSection" class="section" name="collapseableSection" style="">
+            Une seule fois, par exemple au chargement de la page d'accueil :
+            <div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve"><span class="highlight-keyword">var</span> ipm = window.external.ipm;
+ipm.registerCallback(<span class="highlight-literal">"ipmOnPrinterStatusChanged"</span>);</pre></td></tr></table></span></div>
+            Le nom de la fonction callback <b>est</b> le nom de l'événement :
+            <div class="code"><span codeLanguage="JavaScript"><table width="100%" cellspacing="0" cellpadding="0"><tr><th>JavaScript </th><th><span class="copyCode" onclick="CopyCode(this)" onkeypress="CopyCode_CheckKey(this, event)" onmouseover="ChangeCopyCodeIcon(this)" onmouseout="ChangeCopyCodeIcon(this)" tabindex="0"><img class="copyCodeImage" name="ccImage" align="absmiddle" alt="Copy image" title="Copy image" src="../icons/copycode.gif" />Copy</span></th></tr><tr><td colspan="2"><pre xml:space="preserve"><span class="highlight-keyword">function</span> ipmOnPrinterStatusChanged(name) {
+    <span class="highlight-keyword">var</span> printer = window.external.ipm.getPrinter(name);
+}</pre></td></tr></table></span></div></div><h1 class="heading"><span onclick="ExpandCollapse(seeAlsoToggle)" style="cursor:default;" onkeypress="ExpandCollapse_CheckKey(seeAlsoToggle, event)" tabindex="0"><img id="seeAlsoToggle" class="toggle" name="toggleSwitch" src="../icons/collapse_all.gif" />Voir aussi</span></h1><div id="seeAlsoSection" class="section" name="collapseableSection" style=""><div class="seeAlsoStyle"><a href="645d24e8-cfee-be9d-4c3b-27e32f9a3a62.htm">ipm Class</a></div><div class="seeAlsoStyle"><a href="2787de83-71f4-f6aa-33eb-6bfd1282c6a8.htm">ipm Members</a></div></div></div>
+      <div id="footer">
+        <div class="footerLine">
+          <img width="100%" height="3px" src="../icons/footer.gif" alt="Footer image" title="Footer image" />
+        </div>
+        <A NAME="feedback"></A>
+        <span id="fb" class="feedbackcss"></span>
+        <p />Copyright © 2013 IPM France</div>
+    </div>
+  </body>
+</html>
