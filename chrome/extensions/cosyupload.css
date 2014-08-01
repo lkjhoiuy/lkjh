@@ -1,0 +1,17 @@
+div#logo,
+div#flashes,
+div#mock-footer,
+div.cosy_text1,
+div.zavera_banner,
+header,
+footer,
+table#zebra-features tr:first-child,
+table#zebra-features td span[id$="rapidgator"],
+table#zebra-features td span[id$="netload_in"]
+{
+	display: none !important
+}
+body
+{
+	background-image: none !important
+}

@@ -1,0 +1,15 @@
+td#td-left1,
+td#td-right,
+td#td-footer,
+div#respond,
+div#EroIMslider,
+iframe
+{
+	/* background-color: #555 !important; */
+	display: none !important
+}
+
+body, div#wrapper, div#container, div#div-center, div.post
+{
+	background-color: #000 !important;
+}

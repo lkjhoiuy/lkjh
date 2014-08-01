@@ -1,0 +1,45 @@
+body > div:first-child,
+div#header,
+div#sidebar-left,
+div#nav-left,
+div#footer-left,
+table td:first-child,
+span.category, span.comments,
+div.watch-action,
+p.submeta,
+span.collapseomatic,
+/* div.ui-tabs > ul, TODO debug*/
+div.wpts_cl
+{
+	display: none !important;
+}
+div#content-padding
+{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+body, div#page, div #content
+{
+	background: #fff !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+div.collapseomatic_content
+{
+	display: block !important;
+}
+div.ui-tabs > ul > li:nth-child(1),
+div.ui-tabs > ul > li:nth-child(3),
+div.ui-tabs > ul > li:nth-child(4)
+{
+	display: none !important;
+}
+div.ui-tabs > div:nth-child(3)
+{
+	display: none !important;
+}
+
+div.ui-tabs > div:nth-child(4)
+{
+	display: block !important;
+}

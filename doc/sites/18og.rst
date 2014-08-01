@@ -1,0 +1,26 @@
+.. include:: _logo.rst
+.. class:: toctree-sites-logo
+
+|18og| |wg|
+
+.. _18og:
+
+.. index:: 18OnlyGirls
+   single: Sites; 18OnlyGirls
+
+|ico| 18OnlyGirls__
+===================
+
+.. |ico| image:: http://www.google.com/s2/favicons?domain=18onlygirls.com
+.. __: http://www.indexxx.com/websites/335/18onlygirls/
+
+.. _www: http://www.18onlygirls.com/updates.html
+
+.. |logo| image:: /../../../sites/img/18og_logo.png
+   :class: logo-site
+   :target: www_
+
+|logo|
+
+Archives
+--------

@@ -1,0 +1,37 @@
+div#menu,
+div#header,
+div#footer,
+div#sidebar,
+div.rules,
+div[style="border-top: black 1px dashed"],
+center,
+form
+{
+	display: none !important;
+}
+
+div.links-ul {
+	border: 1px solid #d40055;
+	background-color: #ffc0d9;
+	line-height: 4px;
+	padding-left: 8px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	width: 850px;
+}
+div.entry {
+	width: 900px;
+}
+
+div#showXXX {
+	width: 900px;
+	height: 700px;
+	background: #000;
+	opacity: .9;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	z-index: 100;
+}
+img#imgXXX {
+}

@@ -1,0 +1,21 @@
+.. _21n:
+
+.. index:: 21Naturals
+   single: Sites; 21Naturals
+
+|ico| 21Naturals__
+==================
+
+.. |ico| image:: http://www.google.com/s2/favicons?domain=21naturals.com
+.. __: http://www.indexxx.com/websites/2824/21naturals/
+
+.. _www: http://21naturals.com/landing_1/home/
+
+.. |logo| image:: /../../../sites/img/21n_logo.png
+   :class: logo-site
+   :target: www_
+
+|logo|
+
+Archives
+--------

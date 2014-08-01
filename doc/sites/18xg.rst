@@ -1,0 +1,21 @@
+.. _18xg:
+
+.. index:: 18xGirls
+   single: Sites; 18xGirls
+
+|ico| 18xGirls__
+================
+
+.. |ico| image:: http://www.google.com/s2/favicons?domain=18xgirls.com
+.. __: http://www.indexxx.com/websites/
+
+.. _www: http://tour.18xgirls.com/main.php
+
+.. |logo| image:: /../../../sites/img/18xg_logo.png
+   :class: logo-site
+   :target: www_
+
+|logo|
+
+Archives
+--------

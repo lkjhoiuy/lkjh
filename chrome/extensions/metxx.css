@@ -1,0 +1,67 @@
+div#header-wrapper,
+div#footer-wrapper,
+div#crosscol-wrapper,
+div#sidebar-wrapper,
+div#comments,
+div.post-feeds,
+div.post-footer,
+div.status-msg-wrap
+{
+	display: none !important;
+}
+
+div#outer-wrapper,
+div#main-wrapper,
+div.post-body
+{
+	width: 1000px;
+	margin-left: 0;
+}
+
+div.separator
+{
+	float: left !important;
+}
+
+div.links-ul {
+	border: 1px solid #d40055;
+	background-color: #ffc0d9;
+	width: 850px;
+	line-height: 16px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+	padding: 4px 20px 4px 4px;
+}
+div.links-ul p {
+	margin: 4px;
+}
+div.links-ul span {
+	border: 1px solid #000;
+	border-radius: 3px;
+	background-color: #e51a1a;
+	padding: 0 10px;
+	float: right;
+	font-size: 8px;
+	cursor: pointer;
+}
+div.links-ul span.selected {
+	background-color: #87ce75;
+}
+
+/* ul#tocopy { */
+textarea#tocopy {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	min-height: 300px;
+	width: 600px;
+	line-height: 14px;
+	font-family: "Arial";
+	font-size: 12px;
+	text-align: left;
+	padding: 10px 0px 10px 8px;
+	background-color: #FCD209;
+	border: 1px solid red;
+}
+textarea#tocopy p {
+}

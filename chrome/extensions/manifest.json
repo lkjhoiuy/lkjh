@@ -1,0 +1,90 @@
+﻿{
+	"name": "lkjh scripts",
+	"version": "1.0",
+	"manifest_version": 2,
+	
+	"content_scripts": [
+		{
+			"matches": ["http://guests.met-art.com/archive/*", "http://guests.met-art.com/model/*"],
+			"all_frames": false,
+			"css" : ["ma.css", "ma2.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "common.js", "ma.js"]
+		},
+		{
+			"matches": ["https://cosyupload.com/*"],
+			"all_frames": false,
+			"css": ["cosyupload.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "cosyupload.js"]
+		},
+		{
+			"matches": ["http://met-art.com/updates*"],
+			"all_frames": false,
+			"css" : ["ma-upd.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "ma-upd.js"]
+		},
+		{
+			"matches": ["http://buceta.com/*"],
+			"all_frames": false,
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "buceta.js"]
+		},
+		{
+			"matches": ["http://femjoy.com/sets*"],
+			"all_frames": false,
+			"css" : ["fj.css", "fj2.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "common.js", "fj.js"]
+		},
+		{
+			"matches": ["http://www.metxx.com/*"],
+			"all_frames": false,
+			"css": ["metxx.css"]
+		},
+		{
+			"matches": ["http://www.metxx.com/*"],
+			"all_frames": false,
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "metxx.js"]
+		},
+		{
+			"matches": ["http://hot18.net/*"],
+			"all_frames": false,
+			"css": ["hot18.css"]
+		},
+		{
+			"matches": ["http://www.nudist-forum.com/*"],
+			"all_frames": false,
+			"css": ["nudist-forum.css"]
+		},
+		{
+			"matches": ["http://www.hornywhores.net/*"],
+			"all_frames": false,
+			"css": ["hornywhores.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "jquery.base64.js", "hornywhores.js"]
+		},
+		{
+			"matches": ["http://www.pixhost.org/show/*"],
+			"all_frames": false,
+			"css": ["null.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "pixhost.js"]
+		},
+		{
+			"matches": ["http://www.stooorage.com/show/*"],
+			"all_frames": false,
+			"css": ["null.css"],
+			"run_at": "document_start",
+			"js": ["jquery.min.js", "stooorage.js"]
+		},
+		{
+			"matches": ["http://www.girlscanner.com/*"],
+			"all_frames": false,
+			"css": ["girlscanner.css"]
+		}
+	],
+	"web_accessible_resources": ["ma.js", "jquery.min.js", "jquery.min.map"]
+}

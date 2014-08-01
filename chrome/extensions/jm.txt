@@ -1,0 +1,139 @@
+model
+mod-id   = 
+mod-name = 
+
+set
+set-id   = 
+set-type = img|vid
+set-name = 
+set-mods = 
+set-date = 
+set-arti = 
+
+
+http://joymii.com/site/models
+http://joymii.com/site/setcards/count/100/
+http://joymii.com/site/setcard/code/[model]
+
+http://joymii.com/site/set-[photo|video]/code/[set]
+
+http://m1.joymii.com/u/content/__upd-id_/cover/
+
+http://m1.joymii.com/u/content/__upd-id_/cover/r-1280x720.jpg
+http://m1.joymii.com/u/content/__upd-id_/cover/r-570x321.jpg
+
+http://m1.joymii.com/u/content/__upd-id_/cover/r-1280x720.jpg
+http://m1.joymii.com/u/content/__upd-id_/cover/r-450x253.jpg
+
+
+joymii.com/site/setcard/code/__mod-name-fmt_/
+
+joymii.com/site/set-photo/code/__upd-id_
+joymii.com/site/set-video/code/__upd-id_
+
+joymii.com/site/setcards/count/__count_/cols/3/page/__p_
+joymii.com/site/sets/order/date-desc/count/__count_/cols/3/page/__p_
+
+joymii.com/site/sets/filter/couple/order/date-desc/count/30/cols/3
+joymii.com/site/sets/filter/model/code/__mod-id_/count/__count_/cols/3/
+joymii.com/site/sets/filter/model/count/30/cols/3
+
+
+-------------------------------------------------------------------------------
+models
+model: id, name
+-------------------------------------------------------------------------------
+<div class="setcard span-47 last prepend-top append-bottom">
+	<div class="span-8">
+		<a href="/site/setcard/code/abigail">
+			<img src="http://m1.joymii.com/u/content/ffo516/cover/r-140x79.jpg" width="140" height="79" alt="Abigail">
+		</a>
+	</div>
+	<div class="span-30 append-1">
+		<h2><a href="/site/setcard/code/abigail"><span class="lightcolor">Abigail</span></a></h2>
+		<table>
+		</table>
+	</div>
+	<div class="span-8 meta last">
+		<div class="top prepend-top span-8 last">
+			<div class="span-6 prepend-2 append-bottom last stars inactive" stars="5"></div>
+		</div>
+		<div class="bottom prepend-top span-8 last">
+			<div class="span-6 prepend-2 append-bottom last stars inactive" stars="4"></div>
+		</div>
+	</div>
+	<div class="span-8 prepend-top last">
+		<a class="button" href="/site/setcard/code/abigail">Show all sets</a>
+	</div>
+</div>
+
+-------------------------------------------------------------------------------
+model (http://joymii.com/site/sets/order/date-asc/filter/model/code/belinda/count/100/cols/5/)
+sets: id, type, title
+-------------------------------------------------------------------------------
+<div class="admin-select hide">
+	<a href="/admin/admin/mark-set-as-top/code/ewg077/type/static" class="button">Select</a>
+</div>
+<a href="/site/set-video/code/ewg077">
+	<div class="play-overlay"></div>
+	<img src="http://m1.joymii.com/u/content/ewg077/cover/r-140x79.jpg" alt="Girl on Girl">
+</a>
+<div class="data clearfix">
+	<div class="text">
+		<h4>December 8, 2010</h4>
+		<div class="meta">
+			<div class="top">VIDEO</div>
+				<div class="bottom">
+					<div code="ewg077" class="sprite favorite-sprite"></div>
+				</div>
+			</div>
+			<p>…</p>
+		</div>
+	</div>
+</div>
+
+-------------------------------------------------------------------------------
+updates
+set: id, title, date
+-------------------------------------------------------------------------------
+<div class="set span-8 append-1 set-photo prepend-top append-bottom">
+	<div class="admin-select hide">
+		<a href="/admin/admin/mark-set-as-top/code/116203_oig253/type/static" class="button">Select</a>
+	</div>
+
+	<a href="/site/set-photo/code/116203_oig253">
+		<div class="play-overlay"></div>
+		<img src="http://m1.joymii.com/u/content/116203_oig253/cover/r-140x79.jpg" alt="Cumming Home">
+	</a>
+
+	<div class="data clearfix">
+		<div class="text">
+			<h4>February 13, 2013</h4>
+			<div class="meta">
+				<div class="top">PHOTO</div>
+				<div class="bottom">
+					<div code="116203_oig253" class="sprite favorite-sprite"></div>
+				</div>
+			</div>
+			<p>Imagine having the sexy and beautiful Ella to come home to&amp;h…</p>
+		</div>
+	</div>
+</div>
+
+-------------------------------------------------------------------------------
+set (http://joymii.com/site/set-photo/code/116203_oig253)
+set: id, title, models
+-------------------------------------------------------------------------------
+
+<div class="span-49 content-frame">
+	<div class="span-47 prepend-1 last">
+		<div class="span-33 prepend-top append-bottom append-1">
+			<div class="span-33 last">
+				<h1 class="left"><span class="basecolor">Cumming Home&nbsp;</span></h1>
+				<h2><span class="lightcolor">HQ Photoset with <a href="/site/setcard/code/ellam">Ella M.</a> and <a href="/site/setcard/code/richiec">Richie C.</a></span></h2>
+			</div>
+			<p>…</p>
+			<h2 class="lightcolor"><span class="basecolor">Cumming Home</span></h2>
+		</div>
+	</div>
+</div>

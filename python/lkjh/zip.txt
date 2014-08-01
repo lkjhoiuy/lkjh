@@ -1,0 +1,58 @@
+[local file header 1] = 30 bytes + file name
+	50 4B 03 04 [local file header signature]
+	14 00       [version]
+	02 00       [bit flag]
+	00 00       [compression method]
+	8F 64       [last mod file time] 
+	55 40       [last mod file date]
+	1B 48       24 4E [crc-32]
+	99 02 00 00 [compressed size] = 665
+	99 02 00 00 [uncompressed size]
+	05 00       [file name length]
+	00 00       [extra field length]
+	[file name] = 1.jpg
+
+[file data 1]
+
+[local file header 2] = 30 bytes + file name
+	50 4B 03 04 [local file header signature]
+	...
+	[file name] = 2.jpg
+
+[file data 2]
+
+[Central directory structure] = 102 bytes (variable)
+	[file header 1] = 46 bytes + file name
+		50 4B 01 02 [central file header signature]
+    14 00       [version]
+		14 00       [version]
+		02 00       [bit flag]
+		00 00       [compression method]
+		8F 64       [last mod file time] 
+		55 40       [last mod file date]
+		1B 48 24 4E [crc-32]
+		99 02 00 00 [compressed size] = 665
+		99 02 00 00 [uncompressed size]
+		05 00       [file name length]
+		00 00       [extra field length]
+		00 00       [file comment length]
+		00 00       [disk number start]
+		00 00       [internal file attributes]
+		20 00 00 00 [external file attributes]
+		00 00 00 00 [relative offset of local header]
+		[file name] = 1.jpg
+
+	[file header 2] = 46 bytes + file name
+		50 4B 01 02 [central file header signature]
+		...
+		[file name] = 2.jpg
+	
+[End of central directory record] = 22 bytes
+	50 4B 05 06 [end of central dir signature]
+	00 00       [number of this disk]
+	00 00       [number of the disk with the start of the central directory]
+	02 00       [total number of entries in the central directory on this disk]
+	02 00       [total number of entries in the central directory]
+	66 00 00 00 [size of the central directory] = 102
+	90 05 00 00 [offset of start of central directory] = 1424
+	00 00       [.ZIP file comment length]

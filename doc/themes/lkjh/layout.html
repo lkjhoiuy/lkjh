@@ -1,0 +1,19 @@
+{#
+    lkjh/layout.html
+		~~~~~~~~~~~~~~~~
+		
+    Sphinx layout template for the theme.
+#}
+
+{%- extends "basic/layout.html" %}
+
+{% if theme_collapsiblesidebar|tobool %}
+{% set script_files = script_files + ['_static/sidebar.js'] %}
+{% endif %}
+
+{% set sidebars = ['relations.html', 'localtoc.html'] %}
+{% set sidebars = sidebars + ['sourcelink.html'] %}
+{% if customsidebar %}
+{% set sidebars = sidebars + [customsidebar] %}
+{% endif %}
+{% set sidebars = sidebars + ['searchbox.html'] %}

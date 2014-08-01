@@ -1,0 +1,3 @@
+# Create an empty .nojekyll file in the project root.
+# By default, GitHub Pages runs Jekyll on the files unless .nojekyll is present.
+# This causes some issues as Jekyll ignores files and folders which start with an underscore, like _static.

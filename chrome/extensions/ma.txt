@@ -1,0 +1,147 @@
+http://guests.met-art.com/models/top/
+
+http://guests.met-art.com/archive/2013/01/
+
+http://www.met-arti.com/model/
+http://www.met-arti.com/model/metart/
+http://www.met-arti.com/model/metmodels/
+http://www.met-arti.com/model/errotica/
+
+www.met-arti.com/model/metart/?F=0&C=M&O=D&V=0&P=*&X=Go
+http://www.met-arti.com/model/metart/aida_b/
+http://guests.met-art.com/archive/2013/03/
+
+http://www.met-arti.com/category/met-art-updates/page/1/
+
+http://www.met-arti.com/2013/03/feed/atom/
+
+
+http://www.met-arti.com/feed/
+http://www.met-arti.com/feed/atom/
+http://www.met-arti.com/feed/category/met-art-updates/page/1/
+
+
+model
+mod-id = 6ECEAC92F17CF63E8D219B015ACE0212
+name = Vera G
+name-fmt = vera-g
+
+http://guests.met-art.com/model/vera-g/
+http://static.met-art.com/media/headshots/vera-g.jpg
+http://guests.met-art.com/view/ajax/modelInfoj.php?Model_UUID=6ECEAC92F17CF63E8D219B015ACE0212
+
+http://guests.met-art.com/search/vera+g/
+
+update
+upd-id   = 2EBBDB3B2ACC6F275235061E64C3D79F
+type = img|vid
+name = Dialitias
+models = Anastasia C & Vera G
+date-fmt = 20100324
+artist = 
+images = 
+
+
+
+http://static.met-art.com/media/2EBBDB3B2ACC6F275235061E64C3D79F/t_cover_2EBBDB3B2ACC6F275235061E64C3D79F.jpg
+http://static.met-art.com/media/2EBBDB3B2ACC6F275235061E64C3D79F/cover_2EBBDB3B2ACC6F275235061E64C3D79F.jpg
+http://static.met-art.com/media/2EBBDB3B2ACC6F275235061E64C3D79F/clean_2EBBDB3B2ACC6F275235061E64C3D79F.jpg
+
+http://guests.met-art.com/model/anastasia-c-and-vera-g/gallery/20100324/DIALITIAS/
+http://guests.met-art.com/model/anastasia-c-and-vera-g/gallery/20100324/DIALITIAS/[low|medium|high]/
+
+http://guests.met-art.com/model/yarina-a/gallery/20130124/PAQUITA/
+
+http://www.met-art.com/guests/model/yarina-a/gallery/20130124/PAQUITA/
+javascript:popGuestCover('441EC032991D7D64111E5184369B3A16');
+http://fhg.met-art.com/2013-02-14/PAQUITA/
+
+http://www.met-arti.com/model/metart/yarina_a/
+http://www.met-arti.com/model/metart/yarina_a/paquita.html
+
+
+auth
+aut-id   = luca-helios
+aut-name = Luca Helios
+
+http://guests.met-art.com/photographer/luca-helios/">Luca Helios</a></li>
+
+-------------------------------------------------------------------------------
+models
+model: id, name
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+model (http://guests.met-art.com/model/vera-g/)
+model: uuid
+sets: id, type, title, date
+-------------------------------------------------------------------------------
+<h2 class="model_title">
+	<span class="model_title_text">MetArt model: <span class="model_title_name">Vera G</span></span>
+</h2>
+<div class="model_bio_bar">
+	<div class="model_stats_left">
+		<img class="model_headshot" src="http://static.met-art.com/media/headshots/vera-g.jpg">
+		<div class="options_title">
+			<h1>Vera G</h1>
+			<span class="alternate">
+				<a href="javascript:void(0);" class="favorite_selector" rel="Model|6ECEAC92F17CF63E8D219B015ACE0212">ADD FAVORITE</a>
+			</span>
+...	
+
+<ul class="table_list">
+	<li>
+		<a href="javascript:popMovieCover('19D405749EF1B618489657285294C502');">
+			<img src="http://static.met-art.com/media/19D405749EF1B618489657285294C502/t_cover_19D405749EF1B618489657285294C502.jpg" alt="MetArt Gallery Sukis with MetArt Model Vera G">
+		</a>
+	</li>
+	<li>08.07.2010</li>			
+
+	<li class="highlight">
+		<a style="text-decoration:none;" href="http://guests.met-art.com/model/vera-g/">Vera G</a>
+	</li>
+	<li>Sukis</li>
+	<li>By <a style="text-decoration:none;" href="http://guests.met-art.com/photographer/luca-helios/">Luca Helios</a></li>
+	<li class="resolution">
+		<a href="javascript:popMovieCover('19D405749EF1B618489657285294C502');">MOVIE</a>
+	</li>
+	<li>&nbsp;</li>
+</ul>
+
+-------------------------------------------------------------------------------
+<ul class="table_list">
+	<li>
+		<a href="http://guests.met-art.com/model/anastasia-c-and-vera-g/gallery/20100324/DIALITIAS/">
+			<img src="http://static.met-art.com/media/2EBBDB3B2ACC6F275235061E64C3D79F/t_cover_2EBBDB3B2ACC6F275235061E64C3D79F.jpg" alt="MetArt Gallery Dialitias with MetArt Models Anastasia C &amp; Vera G">
+		</a>
+	</li>
+	<li>24.03.2010</li>			
+	
+	<li class="highlight">
+		<a style="text-decoration:none;" href="http://guests.met-art.com/model/anastasia-c/">Anastasia C</a> &amp; <a style="text-decoration:none;" href="http://guests.met-art.com/model/vera-g/">Vera G</a>
+	</li>
+	<li>Dialitias</li>
+	<li>By <a style="text-decoration:none;" href="http://guests.met-art.com/photographer/luca-helios/">Luca Helios</a></li>
+	<li class="resolution res_high">
+		<a href="http://guests.met-art.com/model/anastasia-c-and-vera-g/gallery/20100324/DIALITIAS/high/">High</a>
+	</li>
+	<li class="resolution res_mid">
+		<a href="http://guests.met-art.com/model/anastasia-c-and-vera-g/gallery/20100324/DIALITIAS/medium/">Mid</a>
+	</li>
+	<li class="resolution res_low spaced">
+		<a href="http://guests.met-art.com/model/anastasia-c-and-vera-g/gallery/20100324/DIALITIAS/low/">Low</a>
+	</li>
+	<li class="resolution">
+		<a href="javascript:popGuestCover('2EBBDB3B2ACC6F275235061E64C3D79F');">Full Cover</a>
+	</li>
+</ul>
+
+-------------------------------------------------------------------------------
+updates
+set: id, title, date
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+set (http://joymii.com/site/set-photo/code/116203_oig253)
+set: id, title, models
+-------------------------------------------------------------------------------

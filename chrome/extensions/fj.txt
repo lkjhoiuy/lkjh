@@ -1,0 +1,55 @@
+
+http://femjoy.com/models.php
+http://femjoy.com/models/lorenag/
+
+http://femjoy.com/index/updates/
+
+http://femjoy.com/sets/114367_xjt042
+http://m1.femjoy.com/u/updates/114367_xjt042/cover2_314x150.jpg
+http://m1.femjoy.com/u/updates/114367_xjt042/cover2_970x463.jpg
+
+http://m1.femjoy.com/u/updates/112266_ben686/cover2_150x150.jpg
+http://m1.femjoy.com/u/updates/112266_ben686/cover2_314x314.jpg
+http://m1.femjoy.com/u/updates/112266_ben686/cover2_642x642.jpg
+
+m1.femjoy.com/u/updates/__upd-id_/cover2_970x463.jpg
+m1.femjoy.com/u/updates/__upd-id_/cover2_314x150.jpg
+
+http://femjoy.com/models/lorenag/
+http://femjoy.com/models/belinda/
+http://femjoy.com/artists/Michael Sandberg/
+
+http://femjoy.com/sets?layout={"photo":{"max":2,"offset":0},"video":{"max":1,"offset":0}}&filter=date:2-2011
+http://femjoy.com/sets?layout={"photo":{"max":62,"offset":0},"video":{"max":31,"offset":0}}&filter=date:2-2011
+http://femjoy.com/sets?layout={"photo":{"max":200,"offset":0},"video":{"max":1,"offset":0}}&filter=date:2-2011
+
+
+<div class="span-1 last">
+	<div class="set data">
+		<div class="addon">
+			<a class="button" data-action="add-to-top" data-setcode="114538_sqa717">T<span class="loader"></span></a>
+		</div>
+		<div class="cover">
+			<a href="/sets/114538_sqa717">
+				<img src="http://m1.femjoy.com/u/updates/114538_sqa717/cover2_150x150.jpg" width="150" height="150" alt="Wet Beauties">
+			</a>
+		</div>
+		<h6 style="color:#C3E8EE">February 28, 2011</h6>
+		<p>Wet Beauties<br>	<a href="/models/karlad">Karla D.</a><span>,</span>	<a href="/models/valyn">Valyn</a><br>by <a href="/artists/Terri Benson">Terri Benson</a></p>
+	</div>
+</div>
+
+<div class="span-2 last">
+	<div class="set data">
+		<div class="addon">
+			<a class="button" data-action="add-to-top" data-setcode="114367_xjt042">T<span class="loader"></span></a>
+		</div>
+		<div class="cover">
+			<a href="/sets/114367_xjt042">
+				<img src="http://m1.femjoy.com/u/updates/114367_xjt042/cover2_314x150.jpg" width="314" height="150" alt="rainforest">
+			</a>
+		</div>
+		<h6 style="color:#A1C969">February 21, 2011</h6>
+		<p>rainforest<br>	<a href="/models/lorenag">Lorena G.</a><br>by <a href="/artists/Michael Sandberg">Michael Sandberg</a></p>
+	</div>
+</div>
