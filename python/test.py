@@ -62,8 +62,8 @@ class Test:
 def maTest():
 	xs = Test(ma_.xSite('json'))
 	xs.db_stats()
-	xs.get_07()
-	#~ xs.get_all(2014)
+	#~ xs.get_07()
+	xs.get_all(2014)
 	#~ xs.get_all(2014, 2005)
 	
 	#~ xs.json_read()
@@ -76,7 +76,7 @@ def fjTest():
 	xs = Test(fj_.xSite('json'))
 	xs.db_stats()
 	#~ xs.get_07()
-	xs.get_all(2014, 2004)
+	xs.get_all(2014)
 	xs.site.save()
 	#~ xs.json_write()
 	#~ xs.printCoverUrl()
@@ -89,6 +89,6 @@ if __name__ == "__main__":
 	#~ Cover.offline = True
 	#~ Model.offline = True
 
-	#~ maTest()
+	maTest()
 	fjTest()
 	

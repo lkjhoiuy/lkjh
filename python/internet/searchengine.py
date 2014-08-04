@@ -10,9 +10,10 @@ import json
 from pprint import pprint
 
 urlpatterns = {
-	'google':    'http://www.google.com/search?q={query}&num=50',
-	'indexxx':   'http://www.indexxx.com/search/?query={query}',
-	'thenude':   'http://www.thenude.eu/index.php?page=search&action=searchModels&m_name={query}',
+	'google'     : 'http://www.google.com/search?q={query}&num=50',
+	'indexxx'    : 'http://www.indexxx.com/search/?query={query}',
+	'thenude'    : 'http://www.thenude.eu/index.php?page=search&action=searchModels&m_name={query}',
+	'hornywhores': 'http://www.hornywhores.net/search/{query}',
 }
 
 class SearchEngine:
@@ -81,8 +82,8 @@ class IndexxxSearchEngine(SearchEngine):
 	def parse(self, html):
 		self.results = []
 		
-		ematch = html.split(b'<h3>Exact matches</h3>')[1].split(b'<h3>Similar names found</h3>')[0]
-		soup = BeautifulSoup(ematch)
+		r = html.split(b'<h3>Exact matches</h3>')[1].split(b'<h3>Similar names found</h3>')[0]
+		soup = BeautifulSoup(r)
 
 		self.savesoup(soup)
 		
@@ -103,12 +104,29 @@ class ThenudeSearchEngine(SearchEngine):
 		
 		self.savesoup(r)
 		
-		links = [a['href'] for a in r.select("div.item > a:nth-of-type(1)")]
+		links = [a['href'] for a in r.select('div.item > a:nth-of-type(1)')]
 		entries = [span.get_text() for span in r.select('div.item > span')]
 		
 		for i in range(len(links)):
 			self.results.append({'link': links[i], 'text': entries[i]})
 	
+
+class HornywhoresSearchEngine(SearchEngine):
+	
+	def __init__(self):
+		super().__init__('hornywhores')
+		
+	def parse(self, html):
+		self.results = []
+		soup = BeautifulSoup(html)
+		r = soup.select('div#content')[0]
+		
+		self.savesoup(r)
+		
+		# TODO goto post div.entry a.more-link
+		matchs = soup.select('div.post h3 a')
+		for m in matchs:
+			self.results.append({'link': m['href'], 'text': m.get_text()})
 
 if __name__ == "__main__":
 	gse = GoogleSearchEngine()
