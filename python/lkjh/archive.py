@@ -41,10 +41,10 @@ class Archive(Data):
 	def csvfile(self):
 		return '{0}/{1}/export/csv/{2}.csv'.format(self.path, self.site.abb, self.year)
 
-	def read(self, year, month):
+	def read(self, year, month, force=False):
 		self.year = year
 		self.month = month
-		return super().read()
+		return super().read(force)
 		
 	def get_updates(self, soup):
 		raise NotImplementedError

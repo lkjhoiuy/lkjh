@@ -160,10 +160,10 @@ class Site:
 		for se in self.colls.values():
 			se.save(self.db(dbtype))
 			
-	def update(self, year, month):
+	def update(self, year, month, force=False):
 		"""Update site from archive."""
 		
-		html = self.archive.read(year, month)
+		html = self.archive.read(year, month, force)
 		if not html:
 			self.logger.error("{0}-{1:02d}: NOT read.".format(year, month))
 		elif self.archive.parse(html):

@@ -12,10 +12,13 @@ if __name__ == "__main__":
 
 	lkjh.logger.init("test.log")
 	
-	path = "c:/Mount/WD3/.lkjhdata/libraries/img/ma/_TODO_/_TOP/"
+	# TODO delete ...-clean.jpg
+	
+	#~ path = "c:/Mount/WD3/.lkjhdata/libraries/img/ma/_TODO_/_TOP/"
+	path = "c:/Mount/WD4/.lkjhdata/.tbs/ma/"
 	
 	d = Downloaded(path)
-	d.do(ma_.xSite())  # , ziponly=True)  # dironly=True)  #, ziponly=True)
+	d.do(ma_.xSite('json'), dironly=True)  # , ziponly=True)  # dironly=True)  #, ziponly=True)
 
 	# Landysh A => Shereen A
 	# Verona A => Verona B

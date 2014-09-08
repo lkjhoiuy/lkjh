@@ -2,6 +2,7 @@
 """
 Test.
 """
+from datetime import datetime
 import lkjh.logger
 import lkjh.sites.ma as ma_
 import lkjh.sites.fj as fj_
@@ -16,16 +17,16 @@ class Test:
 		self.logger = logging.getLogger('lkjh.' + self.__class__.__name__)
 		self.site = site
 		
-	def get_07(self):
-		for year in [2014]:
+	def get_month(self, year, month):
+		for year in [year]:
 			self.site.delcsv(year)
 			
-			for month in [7]:
-				self.site.update(year, month)
+			for month in [month]:
+				self.site.update(year, month, True)
 				#~ self.site.writecsv()
 		
 		self.site.save('json')
-		self.site.save('pickle')
+		#~ self.site.save('pickle')
 		#~ self.site.concatcsv(2014, 2004)
 
 	def get_all(self, endyear, beginyear=None):
@@ -60,35 +61,34 @@ class Test:
 			print(cover[0].url)
 
 def maTest():
+	today = datetime.today()
 	xs = Test(ma_.xSite('json'))
 	xs.db_stats()
-	#~ xs.get_07()
-	xs.get_all(2014)
-	#~ xs.get_all(2014, 2005)
-	
+	xs.get_month(today.year, today.month)
+	#~ xs.get_all(today.year)
+	#~ xs.get_all(today.year, 2005)
 	#~ xs.json_read()
-	xs.site.save()
 	#~ xs.json_write()
 	
 	#~ xs.json_write_model('sofi-a')
 	
 def fjTest():
+	today = datetime.today()
 	xs = Test(fj_.xSite('json'))
 	xs.db_stats()
-	#~ xs.get_07()
-	xs.get_all(2014)
-	xs.site.save()
+	xs.get_month(today.year, today.month)
+	#~ xs.get_all(today.year)
 	#~ xs.json_write()
 	#~ xs.printCoverUrl()
 
 	
 if __name__ == "__main__":
-	
+
 	print("IP", internet.myip())
 	lkjh.logger.init("test.log")  #, logging.DEBUG)
 	#~ Cover.offline = True
 	#~ Model.offline = True
 
-	maTest()
+	#~ maTest()
 	fjTest()
 	

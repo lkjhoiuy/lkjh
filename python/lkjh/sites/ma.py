@@ -109,6 +109,9 @@ class xArchive(Archive):
 				cover.update(upd.date)
 				cover.save()
 				upd.addcover(cover)
+				
+				# duree, cf http://m.met-art.com/model/olga-m/movie/20130630/NATARAN/
+				# http://m.met-art.com/model/olga-m/gallery/20070608/PLENILUNA/
 			
 		i = 3 if (upd.type == 'img') else 2
 		amodels = lis[i].select('a')  # only the 2 first models here

@@ -18,9 +18,19 @@ class Data:
 		self.cat = cat
 		self.id = id
 
-	def read(self):
+	def del_local(self):
+		self.logger.info("{0}".format(self.remotepage.htmlfile))
+		try:
+			os.remove(self.remotepage.htmlfile)
+		except:
+			pass
+		
+	def read(self, force=False):
+		# TODO if local exists ??
 		if self.offline: return None
+		
 		self.remotepage = RemotePage(self.cat, self.localpath, self.url)
+		if force: self.del_local()
 		return self.remotepage.read()
 		
 	def get_html_date(self):
