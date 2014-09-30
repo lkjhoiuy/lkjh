@@ -35,7 +35,7 @@ libraries
 OFFLINEPATH = 'd:/.lkjhdata/data'
 DATAPATH = 'd:/.lkjhdata/data'
 DBPATH = 'd:/.lkjhdata/data'
-LIBRARIESPATH = 'd:/.lkjhdata/libraries'
+LIBRARIESPATH = 'd:/.lkjhdata/lib'
 
 import os
 import time

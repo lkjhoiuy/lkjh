@@ -30,6 +30,7 @@ var regsites = [
 	"Himemix",
 	"image.tv",
 	"kinpatu86",
+	"kin8tengoku",
 	"Legs Japan",
 	"Ligui",
 	"Maxi-247",

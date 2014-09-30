@@ -14,8 +14,7 @@ if __name__ == "__main__":
 	
 	# TODO delete ...-clean.jpg
 	
-	#~ path = "c:/Mount/WD3/.lkjhdata/libraries/img/ma/_TODO_/_TOP/"
-	path = "c:/Mount/WD4/.lkjhdata/.tbs/ma/"
+	path = "d:/.lkjhdata/ts/img2/ma/"
 	
 	d = Downloaded(path)
 	d.do(ma_.xSite('json'), dironly=True)  # , ziponly=True)  # dironly=True)  #, ziponly=True)

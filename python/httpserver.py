@@ -12,7 +12,9 @@ fj = fj_.xSite('json');
 
 # http://bioportal.weizmann.ac.il/course/python/PyMOTW/PyMOTW/docs/SocketServer/index.html
 
-PORT = 3306  # 8000
+PORT = 8234  # 51234 -> redemarrer la box
+#~ PORT = 3306  # 51306
+PORT = 5900  # 51900
 xs = fj
 
 class LkjhHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
@@ -21,7 +23,7 @@ class LkjhHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 		#~ print(self.path)
 		pprint(self.client_address)  # (ip, port)
 		ip = self.client_address[0]
-		if not ip in['127.0.0.1', '193.251.1.43']: return
+		if not ip in['127.0.0.1', '193.251.1.43']: return  # 109.69.197.247 ?
 		print(self.headers.get('Host'))  # localhost:8000
 		print(self.headers.get('User-Agent'))  # Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2101.0 Safari/537.36
 		#~ pprint(vars(self.headers))

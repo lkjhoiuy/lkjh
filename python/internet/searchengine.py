@@ -21,6 +21,9 @@ class SearchEngine:
 		self.provider = provider
 		self.urlpattern = urlpatterns[provider]
 		self.headers = {'user-agent': "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/20100101 Firefox/12.0"}	
+		self.lastquery = ""
+		self.results = []
+		# self.results = [{link, text}]
 
 	def search(self, query):
 		self.lastquery = urllib.parse.quote_plus(query)
@@ -52,6 +55,9 @@ class SearchEngine:
 			for r in self.results:
 				fp.write('<p><a href="{link}" target="_blank">{text}</a></p>\n'.format(link=r['link'], text=r['text']).encode('utf-8'))
 			fp.write(b'</body>\n</html>\n')
+	
+	def __str__(self):
+		return "provider: {0}, query: {1}, results: {2}".format(self.provider, self.lastquery, [r['text'].encode('utf-8') for r in self.results])
 
 
 class GoogleSearchEngine(SearchEngine):

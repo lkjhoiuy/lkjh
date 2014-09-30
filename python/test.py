@@ -89,6 +89,6 @@ if __name__ == "__main__":
 	#~ Cover.offline = True
 	#~ Model.offline = True
 
-	#~ maTest()
+	maTest()
 	fjTest()
 	

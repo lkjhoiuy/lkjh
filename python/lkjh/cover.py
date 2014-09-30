@@ -7,7 +7,7 @@ from lkjh.cst import *
 from lkjh.data import *
 from lkjh.remotefile import *
 
-LOCALPATH = 'd:/.lkjhdata/libraries'
+LOCALPATH = 'd:/.lkjhdata/lib'
 
 class Cover(Data):
 	"""
