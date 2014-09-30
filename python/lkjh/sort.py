@@ -78,6 +78,10 @@ class Path:
 			# TODO sum all files + subdir
 			return -1
 		
+	@property
+	def depth(self):
+		return len(self.path.split(os.sep))-1
+		
 	def exists(self):
 		return os.path.exists(self.abspath)
 		
@@ -117,7 +121,7 @@ class Path:
 		else:
 			return Path(self.root, os.path.join(self.dirname, self.basename + suffix))
 			
-	def getfree(self, newpath):
+	def free(self, newpath):
 		if self == newpath: return self
 		if not newpath.exists(): return newpath
 		
@@ -126,16 +130,53 @@ class Path:
 			if not newpath.exists(): break
 		return newpath
 
+	def parent(self):
+		return Path(self.root, os.path.dirname(self.abspath))
+		
+	def add(self, path):
+		return Path(self.root, os.path.join(self.path, path))
+		
 	def move(self, newpath):
 		# no move, same path
 		if self == newpath: return
 		
-		# TODO file exists, same size
+		# if file exists and same size -> same file, delete it
+		if self.isfile() and newpath.exists() and self.size == newpath.size:
+			self.logger.info("{0} -> {1}: newpath already exists.".format(self, newpath))
+			#~ self.delete()
+		elif self.isdir() and newpath.exists():
+			self.logger.info("{0} -> {1}: newpath already exists.".format(self, newpath))
+			# TODO ?
+			dest = self.free(newpath)
+			self.logger.info("{0} -> {1}".format(self, dest))
+			shutil.move(self.abspath, dest.abspath)
+			self.path = dest.path
+		else:
+			dest = self.free(newpath)
+			self.logger.info("{0} -> {1}".format(self, dest))
+			shutil.move(self.abspath, dest.abspath)
+			self.path = dest.path
 		
-		dest = self.getfree(newpath)
-		self.logger.info("{0} -> {1}".format(self, dest))
-		#~ shutil.move(self.abspath, dest.abspath)
-		
+	def moveup(self):
+		print(self.parent().parent().add(self.basename))
+		self.move(self.parent().parent().add(self.basename))
+	
+	def cleanup(self):
+		self.logger.debug(self)
+		if self.isfile():
+			if self.ext in ['.db', '.org', '.pdf', '.url', '.txt']:
+				self.delete()
+		else:
+			for f in self.listfile():
+				f.cleanup()
+			
+	def delete(self):
+		self.logger.info(self)
+		if self.isfile():
+			os.remove(self.abspath)
+		else:
+			os.rmdir(self.abspath)
+	
 	def list(self, pattern='*'):
 		if self.isfile():
 			return None
@@ -146,13 +187,13 @@ class Path:
 		if self.isfile():
 			return None
 		else:
-			return [ Path(self.root, f) for f in os.listdir(self.abspath) if os.path.isdir(os.path.join(self.abspath, f)) ]
+			return [ Path(self.root, os.path.join(self.abspath, f)) for f in os.listdir(self.abspath) if os.path.isdir(os.path.join(self.abspath, f)) ]
 		
 	def listfile(self):
 		if self.isfile():
 			return None
 		else:
-			return [ Path(self.root, f) for f in os.listdir(self.abspath)[:limit] if os.path.isfile(os.path.join(self.abspath, f)) ]
+			return [ Path(self.root, os.path.join(self.abspath, f)) for f in os.listdir(self.abspath) if os.path.isfile(os.path.join(self.abspath, f)) ]
 			
 	def __str__(self):
 		return self.path
@@ -168,141 +209,31 @@ class Path:
 class Sort:
 	"""
 	"""
-	#~ site = None
-	#~ path = LIBRARIESPATH
-	
 	def __init__(self, path):
 		self.logger = logging.getLogger('lkjh.'+self.__class__.__name__)
 		self.path = path
 
-	def newname(self, f):
-		f = self.path + '/' + f
-		if os.path.isfile(f):
-			while os.path.exists(f):
-				bn = os.path.basename(f)
-				bbn, ext = os.path.splitext(bn)
-				f = self.path + '/' + bbn + '_' + ext
-		else:
-			while os.path.exists(f):
-				bn = os.path.basename(f)
-				f = self.path + '/' + bn + '_'
-		return f[len(self.path)+1:]
-	
-	def moveup(self, old):
-		new = os.path.dirname(old)
-		new = self.newname(new)
-		old = self.path + '/' + old
-		new = self.path + '/' + new
-
-		print("move {0} -> \"{1}\"".format(old, new))
-		try:
-			#~ shutil.move(old, new)
-			return True
-		except:
-			return False
-		
-	def movedir(self, old, new):
-		new = self.newname(new)
-		old = self.path + '/' + old
-		new = self.path + '/' + new
-		print("move {0} -> \"{1}\"".format(old, new))
-		try:
-			#~ shutil.move(old, new)
-			return True
-		except:
-			return False
-		
-	def normdir(self, d):
-		nd = repinside(d, '_')
-		nd = repinside(nd, '.')
-		print('"{0}"'.format(nd))
-			
-		if d != nd:
-			self.movedir(d, nd)
-		return d
-		#~ return nd
-	
-	
-	def listdir(self, rd, depth=1):
-		d = self.path + '/' + rd
-		if os.path.isfile(d): return
-		
-		l = glob.glob(d + '/*')
-		if len(l) == 0:
-			# dir is empty, delete it
-			print('  ' * depth + "to delete")
-			return
-		
-		for f in l:
-			f = os.path.abspath(f)
-			bn = os.path.basename(f)
-			if os.path.isfile(f):
-				size = os.path.getsize(f)
-				print("{0}{1} (size={2})".format('  ' * depth, bn, size))
-				if depth >= 2:
-					#~ print("move up")
-					self.moveup(f)
-			else:
-				print("{0}[{1}]".format('  ' * depth, bn))
-				d = self.normdir(rd + '/' + bn)
-				self.listdir(rd + '/' + bn, depth+1)
-	
-	def listall2(self, path, depth=1):
+	def listall2(self, path):
+		path.cleanup()
 		for p in path.list('*'):
-			if p.isfile():
-				print("{0}{1} (size={2})".format('  ' * depth, p, p.size))
-				if depth >= 2:
-					print("move up")
+			if p.isdir():
+				print("{0}[{1}]".format('  ' * p.depth, p))
+				self.listall2(p)
+				if p.isempty():
+					print(p, p.isempty())
+					if len(p.basename) <= 5:
+						p.delete()
 			else:
-				print("{0}[{1}]".format('  ' * depth, p))
-				self.listall2(p, depth+1)
+				print("{0}{1} (size={2})".format('  ' * p.depth, p, p.size))
+				if p.depth >= 2:
+					p.moveup()
 			
 	def listall(self, limit=-1):
-		#~ for p in Path(self.path).list('*')[:limit]:
 		for p in Path(self.path).listdir()[:limit]:
-			print(p, p.isempty())
+			print(p)
 			p.move(p.normalize())
 			self.listall2(p)
 		return
 		
-		for d in glob.glob(self.path + '/*')[:limit]:
-			d = os.path.abspath(d)
-			bn = os.path.basename(d)
-			dn = os.path.dirname(d)
-			ext = os.path.splitext(bn)[1].lower()
-			isfile = os.path.isfile(d)
-			size = os.path.getsize(d)
-			
-			d = bn
-			print("[{0}]".format(d))
-			d = self.normdir(d)
-			self.listdir(d)
-			
-	def sortdirs(self):
-		for dir in glob.glob(self.path + '/*')[:1]:
-			self.sortdir(dir)
-			
-	def sortdir(self, path):
-		if path.endswith('.zip'):
-			os.mkdir(path[:-4])
-			newpath = os.path.abspath(path[:-4] + '/' + os.path.basename(path))
-			os.renames(path, newpath)
-			files = [newpath]
-		else:
-			files = glob.glob(path + '/*.*')
-			
-		for f in files:
-			f = os.path.abspath(f)
-			bn = os.path.basename(f)
-			dn = os.path.dirname(f)
-			ext = os.path.splitext(bn)[1].lower()
-			
-			if ext in ['.db', '.org', '.pdf', '.url', '.txt']:
-				os.remove(f)
-			
-			if ext in ['.rar', '.zip']:
-				zfile = ZipFile(f).unpack()
-
-	def guess(self, path, site):
-		pass
-		
+		#~ if ext in ['.rar', '.zip']:
+			#~ zfile = ZipFile(f).unpack()

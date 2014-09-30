@@ -15,7 +15,7 @@ if __name__ == "__main__":
 	path = "d:/.lkjhdata/dl/tmp4"
 	
 	d = Sort(path)
-	d.listall(8)
+	d.listall(10)
 	
 	#~ pprint(repinside("abcd_efgh", '_'))
 	#~ pprint(repinside("abcd_efgh_", '_'))
