@@ -35,6 +35,7 @@ var regsites = [
 	"Ligui",
 	"Maxi-247",
 	"misty Idol Gravure",
+	"MyGirl",
 	"Mywife.cc",
 	"NAKED-ART",
 	"Pacific Girls",

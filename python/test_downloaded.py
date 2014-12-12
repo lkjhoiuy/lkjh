@@ -10,14 +10,15 @@ import lkjh.sites.fj as fj_
 
 if __name__ == "__main__":
 
-	lkjh.logger.init("test.log")
-	
-	# TODO delete ...-clean.jpg
-	
-	path = "d:/.lkjhdata/ts/img2/ma/"
-	
-	d = Downloaded(path)
-	d.do(ma_.xSite('json'), dironly=True)  # , ziponly=True)  # dironly=True)  #, ziponly=True)
+    lkjh.logger.init("test.log")
+    
+    # TODO delete ...-clean.jpg
+    
+    path = "d:/.lkjhdata/ts/img2/ma/"
+    path = "d:/.lkjhdata/dl/tmp4/_img/_ma/"
+    
+    d = Downloaded(path)
+    d.do(ma_.xSite('json'), dironly=True)  # , ziponly=True)  # dironly=True)  #, ziponly=True)
 
-	# Landysh A => Shereen A
-	# Verona A => Verona B
+    # Landysh A => Shereen A
+    # Verona A => Verona B

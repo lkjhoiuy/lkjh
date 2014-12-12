@@ -11,27 +11,27 @@ from lkjh.cst import *
 # http://blog.amir.rachum.com/blog/2012/04/26/implementing-the-singleton-pattern-in-python/
 
 # def singleton(cls):
-	# instance = None
-	# def ctor(*args, **kwargs):
-		# nonlocal instance
-		# if not instance:
-			# instance = cls(*args, **kwargs)
-		# return instance
-	# return ctor
+    # instance = None
+    # def ctor(*args, **kwargs):
+        # nonlocal instance
+        # if not instance:
+            # instance = cls(*args, **kwargs)
+        # return instance
+    # return ctor
 
 # @singleton
 class DB:
-	"""
-	"""
-	path = DBPATH
-	
-	def __init__(self, siteabb):
-		self.logger = logging.getLogger('lkjh.' + self.__class__.__name__)
-		self.siteabb = siteabb
-	
-	def load(self, cat):
-		return {}
-		
-	def save(self, cat, obj):
-		raise NotImplementedError
+    """
+    """
+    path = DBPATH
+    
+    def __init__(self, siteabb):
+        self.logger = logging.getLogger('lkjh.' + self.__class__.__name__)
+        self.siteabb = siteabb
+    
+    def load(self, cat):
+        return {}
+        
+    def save(self, cat, obj):
+        raise NotImplementedError
 

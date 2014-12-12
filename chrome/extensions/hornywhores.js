@@ -6,7 +6,8 @@ var entry = {};
 function onDOMloaded() {
 
 	// This is a post (test comment) ?
-	if ($('ol.commentlist').length > 0) return;
+	// But search result ?
+	//if ($('ol.commentlist').length > 0) return;
 	
 	scrap1();
 	console.log("%o", db);
