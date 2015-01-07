@@ -113,8 +113,8 @@ if __name__ == "__main__":
     #~ all(Path(path))
     #~ # resort_img(4, 'ylp')
     
-    path = "d:/.lkjhdata/dl/tbs5/_/test"
+    #~ path = "d:/.lkjhdata/dl/tbs5/_/test"
     #~ path = "d:/.lkjhdata/dl/tbs5/_TODO"
     #~ path = "d:/.lkjhdata/dl/dl3"
-    #~ path = "d:/.lkjhdata/ts/vid5/wowg"
+    path = "d:/.lkjhdata/ts/vid5/wowg"
     sort5(Path(path))

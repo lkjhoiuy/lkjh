@@ -169,7 +169,7 @@ class HornywhoresSearchEngine(SearchEngine):
             text = ""
             
             post = self.read(link['href'], False)
-            post = post.decode('utf-8').replace('\n', ' ')
+            post = post.decode('utf-8').replace('\n', ' ')  # TODO utf-8 ????
             
             if self.filename and not self.filename in post:
                 continue
@@ -231,7 +231,14 @@ class HornywhoresSearchEngine(SearchEngine):
             text = text.replace("  ", " ")
             text = text.replace("&amp;", "&")
             text = text.replace("&#039;", "'")
-            text = text.replace("**", " - ")
+            
+            try:
+                text = text.encode('cp1252')
+                # text.find(b'\x96'))
+                text = text.replace(b'\x96', b'-')
+                text = text.decode('cp1252')
+            except:
+                pass
             
             titles = title.split(" - ")
             texts = text.split(" - ")
