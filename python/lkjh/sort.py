@@ -12,6 +12,9 @@ from subprocess import call
 from lkjh.remotefile import *
 from lkjh.zipfile import *
 
+import internet
+from internet import *
+
 from pprint import pprint
 
 EXE7Z = "C:/Program Files/7-Zip/7z.exe"
@@ -258,7 +261,9 @@ class Path:
             except:
                 pass
             return [ self.add(f) for f in os.listdir(self.abspath) if os.path.isdir(os.path.join(self.abspath, f)) ]
-        
+
+    # key=os.path.basename
+    # key=os.path.getsize
     def listfile(self, key=None):
         if self.isfile():
             return None
@@ -310,8 +315,10 @@ class PathSite(Path):
         return False
 
     def issite_aa(self):
+        if self.basename.lower().startswith('aa '): return True
         if self.basename.lower().startswith('amourangels'): return True
         if len(glob.glob(self.abspath + '/' + "AmourAngels*")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "aa - *")) > 0: return True
         return False
         
     def issite_al(self):
@@ -349,14 +356,26 @@ class PathSite(Path):
         if len(glob.glob(self.abspath + '/' + "bikinipleasure*")) > 0: return True
         return False
 
+    def issite_ca(self):
+        if self.basename.lower().startswith('creampie-angels '): return True
+        return False
+
     def issite_ddg(self):
         if self.basename.lower().startswith('dd '): return True
         if self.basename.lower().startswith('ddg '): return True
         if self.basename.lower().startswith('digitaldesire '): return True
         return False
 
+    def issite_df(self):
+        if self.basename.lower().startswith('devilsfilm '): return True
+        return False
+
     def issite_dom(self):
         if self.basename.lower().startswith('domai '): return True
+        return False
+
+    def issite_ds(self):
+        if self.basename.lower().startswith('daringsex '): return True
         return False
 
     def issite_ea(self):
@@ -364,6 +383,7 @@ class PathSite(Path):
         if self.basename.lower().startswith('erroticaarchive'): return True
         if self.basename.lower().startswith('errotica-archive'): return True
         if len(glob.glob(self.abspath + '/' + "ErroticaArchive*")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "*Errotica-Archive*")) > 0: return True
         return False
 
     def issite_eb(self):
@@ -380,7 +400,12 @@ class PathSite(Path):
         return False
 
     def issite_fg(self):
+        if self.basename.lower().startswith('famegirls '): return True
         if self.basename.lower().startswith('fgn '): return True
+        return False
+        
+    def issite_fhd(self):
+        if self.basename.lower().startswith('fantasyhd '): return True
         return False
         
     def issite_fil(self):
@@ -446,8 +471,17 @@ class PathSite(Path):
         if self.basename.lower().startswith('mcn '): return True
         if self.basename.lower().startswith('mc-nudes'): return True
         if self.basename.lower().startswith('mcnudes'): return True
+        if len(glob.glob(self.abspath + '/' + "!mcn cover *")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "mcn cover *")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "mcn_cover_*")) > 0: return True
         if len(glob.glob(self.abspath + '/' + "mc nudes*")) > 0: return True
-        if len(glob.glob(self.abspath + '/' + "mcnudes*")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "mc_nudes*")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "*mcnudes*")) > 0: return True
+        
+        return False
+    
+    def issite_mn(self):
+        if self.basename.lower().startswith('michaelninn'): return True
         return False
         
     def issite_mnd(self):
@@ -460,13 +494,23 @@ class PathSite(Path):
         if self.basename.lower().startswith('mpl '): return True
         if self.basename.lower().startswith('mplstudios'): return True
         r = glob.glob(self.abspath + '/' + "????_lg.jpg")
-        if len(r) == 0: return False
-        name = r[0][len(self.abspath)+1:]
-        return re.match('\d{4}_lg.jpg$', name)
+        if len(r) > 0:
+            name = r[0][len(self.abspath)+1:]
+            if re.match('\d{4}_lg.jpg$', name): return True
+        r = glob.glob(self.abspath + '/' + "???? lg.jpg")
+        if len(r) > 0:
+            name = r[0][len(self.abspath)+1:]
+            if re.match('\d{4} lg.jpg$', name): return True
+        return False
         
     def issite_mr(self):
         if self.basename.lower().startswith('massageroom '): return True
         if len(glob.glob(self.abspath + '/' + "mr.*")) > 0: return True
+        return False
+    
+    def issite_ms(self):
+        if len(glob.glob(self.abspath + '/' + "Morey-*")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "ms - *")) > 0: return True
         return False
     
     def issite_nb(self):
@@ -496,6 +540,7 @@ class PathSite(Path):
         if self.basename.lower().startswith('rylsky-art '): return True
         if len(glob.glob(self.abspath + '/' + "RA_*")) > 0: return True
         if len(glob.glob(self.abspath + '/' + "RA *")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "Rylsky-Art*")) > 0: return True
         return False
         
     def issite_sa(self):
@@ -506,6 +551,7 @@ class PathSite(Path):
     def issite_sb(self):
         if self.basename.lower().startswith('sb '): return True
         if self.basename.lower().startswith('showybeauty '): return True
+        if len(glob.glob(self.abspath + '/' + "sb - *")) > 0: return True
         return False
         
     def issite_sfg(self):
@@ -519,7 +565,7 @@ class PathSite(Path):
         
     def issite_st18(self):
         if self.basename.lower().startswith('stunning18 '): return True
-        if len(glob.glob(self.abspath + '/' + "Stunning *")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "Stunning*")) > 0: return True
         return False
         
     def issite_tle(self):
@@ -536,6 +582,9 @@ class PathSite(Path):
         if self.basename.lower().startswith('teenmodels '): return True
         return False
         
+    def issite_tmw(self):
+        return False
+        
     def issite_tw(self):
         if self.basename.lower().startswith('t '): return True
         if self.basename.lower().startswith('twisty '): return True
@@ -550,19 +599,21 @@ class PathSite(Path):
     def issite_w4b(self):
         if self.basename.lower().startswith('w4b '): return True
         if self.basename.lower().startswith('watch4beauty '): return True
+        if len(glob.glob(self.abspath + '/' + "Watch4Beauty*")) > 0: return True
+        if len(glob.glob(self.abspath + '/' + "*-cover-max.jpg")) > 0: return True
         return False
         
     def issite_wlt(self):
         if self.basename.lower().startswith('welivetogether '): return True
         return False
         
-    def issite_wog(self):
+    def issite_wowg(self):
         if self.basename.lower().startswith('wg '): return True
         if self.basename.lower().startswith('wowgirls '): return True
         if self.basename.lower().startswith('wow-girls '): return True
         return False
         
-    def issite_wop(self):
+    def issite_wowp(self):
         if self.basename.lower().startswith('wp '): return True
         if self.basename.lower().startswith('wowporn '): return True
         return False
@@ -585,6 +636,7 @@ class PathSite(Path):
     def issite_zem(self):
         if self.basename.lower().startswith('zem '): return True
         if self.basename.lower().startswith('zemani '): return True
+        if len(glob.glob(self.abspath + '/' + "cover-big.jpg")) > 0: return True
         if len(glob.glob(self.abspath + '/' + "!cover-big.jpg")) > 0: return True
         return False
         
@@ -601,12 +653,16 @@ class PathSite(Path):
         if site == 'ave' : return self.issite_ave()
         if site == 'bbs' : return self.issite_bbs()
         if site == 'bp'  : return self.issite_bp()
+        if site == 'ca'  : return self.issite_ca()
         if site == 'ddg' : return self.issite_ddg()
+        if site == 'df'  : return self.issite_df()
         if site == 'dom' : return self.issite_dom()
+        if site == 'ds'  : return self.issite_ds()
         if site == 'ea'  : return self.issite_ea()
         if site == 'eb'  : return self.issite_eb()
         if site == 'ed'  : return self.issite_ed()
         if site == 'fg'  : return self.issite_fg()
+        if site == 'fhd' : return self.issite_fhd()
         if site == 'fil' : return self.issite_fil()
         if site == 'fj'  : return self.issite_fj()
         if site == 'gn'  : return self.issite_gn()
@@ -614,13 +670,15 @@ class PathSite(Path):
         if site == 'hr'  : return self.issite_hr()
         if site == 'itc' : return self.issite_itc()
         if site == 'jm'  : return self.issite_jm()
-        if site == 'kha'  : return self.issite_kha()
-        if site == 'kpc'  : return self.issite_kpc()
+        if site == 'kha' : return self.issite_kha()
+        if site == 'kpc' : return self.issite_kpc()
         if site == 'ma'  : return self.issite_ma()
         if site == 'mcn' : return self.issite_mcn()
+        if site == 'mn'  : return self.issite_mn()
         if site == 'mnd' : return self.issite_mnd()
         if site == 'mpl' : return self.issite_mpl()
         if site == 'mr'  : return self.issite_mr()
+        if site == 'ms'  : return self.issite_ms()
         if site == 'nb'  : return self.issite_nb()
         if site == 'nf'  : return self.issite_nf()
         if site == 'ntb' : return self.issite_ntb()
@@ -635,14 +693,15 @@ class PathSite(Path):
         if site == 'tle' : return self.issite_tle()
         if site == 'tlhc': return self.issite_tlhc()
         if site == 'tm'  : return self.issite_tm()
+        if site == 'tmw'  : return self.issite_tmw()
         if site == 'tw'  : return self.issite_tw()
         if site == 'vt'  : return self.issite_vt()
         if site == 'w4b' : return self.issite_w4b()
         if site == 'wlt' : return self.issite_wlt()
-        if site == 'wog' : return self.issite_wog()
-        if site == 'wop' : return self.issite_wop()
+        if site == 'wowg': return self.issite_wowg()
+        if site == 'wowp': return self.issite_wowp()
         if site == 'xa'  : return self.issite_xa()
-        if site == 'ylp'  : return self.issite_ylp()
+        if site == 'ylp' : return self.issite_ylp()
         if site == 'zem' : return self.issite_zem()
         return False
 
@@ -651,11 +710,60 @@ class PathSite(Path):
         if site == 'jm'  : return self.issite2_jm()
         return False
 
-    SITES = ['18og', '18xg', '21n', 'aa', 'al', 'als', 'amk', 'atk', 'ave', 'bbs', 'bp', 'ddg', 'dom',
-        'ea', 'eb', 'ed', 'fg', 'fil', 'fj', 'gn', 'ha', 'hr', 'itc', 'jm', 'kha', 'kpc',
-        'ma', 'mcn', 'mnd', 'mpl', 'mr', 'nb', 'nf', 'ntb', 'pb', 'ra',
-        'sa', 'sb', 'sfg', 'sk', 'st18', 'tle', 'tlhc', 'tm', 'tw', 'vt',
-        'w4b', 'wlt', 'wog', 'wop', 'xa', 'ylp', 'zem']
+    SITES = ['18og', '18xg', '21n', 'aa', 'al', 'als', 'amk', 'atk', 'ave', 'bbs', 'bp', 'ca', 'ddg', 'df', 'dom', 'ds',
+        'ea', 'eb', 'ed', 'fg', 'fhd', 'fil', 'fj', 'gn', 'ha', 'hr', 'itc', 'jm', 'kha', 'kpc',
+        'ma', 'mcn', 'mn', 'mnd', 'mpl', 'mr', 'ms', 'nb', 'nf', 'ntb', 'pb', 'ra',
+        'sa', 'sb', 'sfg', 'sk', 'st18', 'tle', 'tlhc', 'tm', 'tmw', 'tw', 'vt',
+        'w4b', 'wlt', 'wowg', 'wowp', 'xa', 'ylp', 'zem']
+
+    SITES2 = {
+        'aa'   : "Amour[- ]Angels",
+        'add'  : "AmericanDaydreams",
+        'al'   : "Art[- ]Lingerie",
+        'als'  : "ALSScan",
+        'ao30' : "AllOver30",
+        'apdn' : "APDNudes",
+        'atk'  : "##&##&##&##",
+        'ave'  : "(?:av|AV)Erotica",
+        'bbs'  : "##&##&##&##",
+        'bn'   : "BeautifulNude",
+        'brz'  : "BigTitsInSports",
+        'BreathTakers': "Breath-Takers",
+        'ddf'  : "##&##&##&##",
+        'ea'   : "Errotica[- ]Archives",
+        'ed'   : "EternalDesire",
+        'fj'   : "FemJoy",
+        'fotoKoma': "FotoKOMA",
+        'ha'   : "Hegre[- ]Art",
+        'hr'   : "HollyRandall",
+        'HippieGoddess': "HippieGoddess",
+        'ivf'  : "IvanaFukalot",
+        'jj'   : "JulesJordan",
+        'kg'   : "Killer[- ]Gram",
+        'lk'   : "LezKiss",
+        'ma'   : "Met[- ]Art",
+        'mcn'  : "##&##&##&##",
+        'mnd'  : "MyNakedDolls",
+        'melina': "Melina.com",
+        'ms'   : "Morey[- ]?Studio",
+        'mpl'  : "MPLStudios",
+        'ns'   : "HeavyHandfuls",
+        'pb'   : "PlayboyPlus",
+        'phd'  : "Photo[dD]romm",
+        'ra'   : "RylskyArt",
+        'sa'   : "SexArt",
+        'sb'   : "ShowyBeauty",
+        'sfg'  : "SinfulGoddesses",
+        'sk'   : "Skokoff",
+        'st18' : "Stunning18",
+        'tle'  : "TheLifeErotic",
+        'tm'   : "TeenModels",
+        'tw'   : "Twistys",
+        'w4b'  : "Watch4Beauty",
+        'wgp'  : "WhenGirlsPlay",
+        'xa'   : "[^X]?X-Art",
+        'zem'  : "Zemani"
+    }
 
     def movesite(self):
         for site in PathSite.SITES:
@@ -669,6 +777,24 @@ class PathSite(Path):
             if self.issite2(site):
                 print(site, self.basename.encode())
                 self.basename = '_' + site + '/' + self.basename
+    
+    def movesite2(self):
+        se = GoogleSearchEngine()
+        print(self.basename)
+        r = se.search(self.basename)
+        #~ if not(r): return
+        if not(r): raise Exception("Error")
+        se.parse(r)
+        # se.tohtml()
+        for r in se.results:
+            print(" ", r['title'].encode('utf-8'))
+            for site,name in PathSite.SITES2.items():
+                if re.match(".*" + name, r['title']):  # re.I
+                    print("  -", site)
+                    self.basename = '_' + site + '/' + self.basename
+                    return
+        print("  - NO MATCH")
+        self.basename = '_' + '/' + self.basename
     
 class Sort:
     """
@@ -763,3 +889,4 @@ class Sort:
                 if zip.exists() and zip.size > 20000000:
                     p.delete()
                 break
+    
